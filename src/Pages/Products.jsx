@@ -31,9 +31,9 @@ const Product = ({ product, loading }) => {
 }
 
 const ProductPannel = ({ products, loading, className, isHidden }) => {
-    const isAdjustable = useMediaQuery({ maxWidth: 900 })
+    const isAdjustable = useMediaQuery({ maxWidth: 800 })
     return (
-        <div className={`${className}`} style={{ gridTemplateColumns: isHidden && isAdjustable ? 'repeat(4, 1fr)' : 'repeat(3, 1fr)' }}>
+        <div className={`${className}`} style={{ gridTemplateColumns: (isHidden && isAdjustable) ? 'repeat(4, 1fr)' : 'repeat(3, 1fr)' }}>
             {loading ? (
                 <div>Loading...</div>
             ) : (

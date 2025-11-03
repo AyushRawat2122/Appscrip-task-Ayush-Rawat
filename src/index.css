@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "SimplonNorm";
+  src: url("/fonts/SimplonNorm-Regular.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SimplonNorm", sans-serif;
+}
+
+.base-text {
+  font-family: "SimplonNorm", sans-serif;
+}
+
+.inter-text {
+  font-family: "Inter", sans-serif !important;
+}
+
+header {
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.top-strip {
+  background-color: #000000;
+  color: #eb4c6b;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  font-weight: 400;
+  vertical-align: middle;
+  padding: 8px 274px;
+}
+
+.top-strip > ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.top-strip > ul > li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-strip > ul > li > img {
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .top-strip {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    width: 100%;
+  }
+}
